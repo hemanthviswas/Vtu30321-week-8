@@ -1,0 +1,10 @@
+Java Method Overriding 2 (Super Keyword)
+https://www.hackerrank.com/challenges/java-method-overriding-2-super-keyword/
+Program:-
+String temp = super.define_me();
+Output:-
+Compiler Message
+Success
+Expected Output
+Hello I am a motorcycle, I am a cycle with an engine.
+My ancestor is a cycle who is a vehicle with pedals.
