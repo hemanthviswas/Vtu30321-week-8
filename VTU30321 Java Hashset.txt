@@ -1,0 +1,50 @@
+Java Hashset
+https://www.hackerrank.com/challenges/java-hashset/problem
+Program:-
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int t = sc.nextInt();
+
+        Set<String> pairs = new HashSet<>();
+
+        for (int i = 0; i < t; i++) {
+            String first = sc.next();
+            String second = sc.next();
+
+            // Make each pair unique
+            String pair = first + " " + second;
+
+            pairs.add(pair);
+
+            System.out.println(pairs.size());
+        }
+
+        sc.close();
+    }
+}
+Output:-
+Input (stdin)
+5
+john tom
+john mary
+john tom
+mary anna
+mary anna
+Your Output (stdout)
+1
+2
+2
+3
+3
+Expected Output
+1
+2
+2
+3
+3
