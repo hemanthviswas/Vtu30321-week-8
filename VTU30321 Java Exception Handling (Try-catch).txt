@@ -1,0 +1,35 @@
+Java Exception Handling (Try-catch)
+https://www.hackerrank.com/challenges/java-exception-handling-try-catch 
+Program:-
+import java.util.*;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        try {
+            int x = sc.nextInt();
+            int y = sc.nextInt();
+
+            System.out.println(x / y);
+        } 
+        catch (InputMismatchException e) {
+            System.out.println(e);
+        } 
+        catch (ArithmeticException e) {
+            System.out.println(e);
+        }
+
+        sc.close();
+    }
+}
+Output:-
+Compiler Message
+Wrong Answer
+Input (stdin)
+2147483648
+2147483648
+Your Output (stdout)
+java.util.InputMismatchException: For input string: "2147483648"
+Expected Output
+java.util.InputMismatchException
