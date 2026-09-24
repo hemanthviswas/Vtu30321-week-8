@@ -1,0 +1,33 @@
+Java Singleton Pattern
+https://www.hackerrank.com/challenges/java-singleton/ 
+Program:-
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+import java.lang.reflect.*;
+
+class Singleton {
+
+    private Singleton() {
+    }
+
+    public String str;
+
+    private static Singleton singleInstance = null;
+
+    public static Singleton getSingleInstance() {
+        if (singleInstance == null) {
+            singleInstance = new Singleton();
+        }
+        return singleInstance;
+    }
+}
+Output:-
+Input (stdin)
+hello world
+Your Output (stdout)
+Hello I am a singleton! Let me say hello world to you
+Expected Output
+Hello I am a singleton! Let me say hello world to you
