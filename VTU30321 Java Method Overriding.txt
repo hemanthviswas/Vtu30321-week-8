@@ -1,0 +1,18 @@
+Java Method Overriding
+https://www.hackerrank.com/challenges/java-method-overriding/problem
+Program:-
+@Override
+void getNumberOfTeamMembers(){
+    System.out.println("Each team has 11 players in " + getName());
+}
+Output:-
+Your Output (stdout)
+Generic Sports
+Each team has n players in Generic Sports
+Soccer Class
+Each team has 11 players in Soccer Class
+Expected Output
+Generic Sports
+Each team has n players in Generic Sports
+Soccer Class
+Each team has 11 players in Soccer Class
